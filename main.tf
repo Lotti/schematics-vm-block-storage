@@ -34,7 +34,6 @@ resource "ibm_compute_vm_instance" "vm" {
   ssh_key_ids = [ibm_compute_ssh_key.ssh_key.id]
 
   user_metadata = "{\"value\":\"newvalue\"}"
-  dedicated_acct_host_only = false
   # public_vlan_id = 1391277
   # private_vlan_id  = "${ibm_network_vlan.privateVlan1.id}"
   # private_security_group_ids = [576973]
