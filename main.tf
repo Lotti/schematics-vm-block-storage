@@ -38,9 +38,9 @@ resource "ibm_compute_vm_instance" "vm" {
   # private_security_group_ids = [576973]
   # public_subnet = "50.97.46.160/28"
   # private_subnet = "10.56.109.128/26"
-  provisioner "remote-exec" {
-    script = "gip.sh"
-  }
+  # provisioner "remote-exec" {
+  #   script = "gip.sh"
+  # }
 }
 
 resource "ibm_network_public_ip" "ip" {
