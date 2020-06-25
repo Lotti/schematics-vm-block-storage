@@ -18,7 +18,6 @@ resource "ibm_storage_block" "block_storage" {
 }
 
 resource "ibm_compute_vm_instance" "vm" {
-  count = 1
   hostname = "valerio-schematics-test"
   domain = "ibm.com"
   os_reference_code = "UBUNTU_18_64"
